@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Game</title>
+</head>
+<body onload="on()">
+     <audio hidden autoplay loop>
+            <source src="y2mate.com - Swordland.mp3" type="audio/mpeg">
+  </audio>
+<div class="container">
+    <div id="overlay" onclick="off()">
+            <div class="text">Welcome To Killing Rimuru</div>
+            <div class="text">Click The Start Button</div>
+            <button class="startBtn">START</button>
+        </div>
+        <div id="overlayGameOver" onclick="GameOver()">
+            <div class="text">
+                <img src="elaina sad.gif">
+                    <div class="notif">
+                        <h4>Kamu Kalah</h4>
+                        <button class="reload" onclick="window.location.reload()">Main Lagi?</button>
+                    </div>
+            </div>
+        </div>
+                 <div id="overlayWin" onclick="Win()">
+            <div class="text">
+                <img src="elaina.gif">
+                    <div class="notif">
+                        <h4>Kamu Menang</h4>
+                        <button class="reload" onclick="window.location.reload()">Main Lagi?</button>
+                    </div>
+            </div>
+        </div>
+     <div style="padding:20px"></div>
+        <button type="button" class="point">SCORE :</button>
+     </div>
+  <img src="Magic.png" class="cursor"/>
+  <img src="Bullet.png" class="bullet"/>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
